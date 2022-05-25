@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+</html>
+
+<body>
+
+    <head>
+        <title>Reto 2 || Juego del ahorcado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+
+    <header class="cabeza">
+        <img class="logo" src="./imagenes/logo.png">
+        <p id="titulo"></p>
+    </header>
+
+    <div class="oculta" id="tablero-principal">
+        <div class="hombre-ahorcado">
+            <img id="hombre" alt="hombre-ahorcado" />
+        </div>
+        <div class="adivinado">
+
+        </div>
+        <div class="errado">
+
+        </div>
+        <form class="botones" action="javascript:void(0)">
+            <input type="button" id="nuevo-juego" value="Nuevo juego" onclick="nuevoJuego()" />
+
+            <input type="button" class="desistir" id="Desistir" value="Desistir" onclick="location. reload()" />
+        </form>
+    </div>
+
+
+
+
+    <main class="pantalla">
+        <div class="botones" id="botones">
+            <button id="boton-iniciar" class="boton-iniciar">Iniciar juego</button>
+            <button id="boton-agregar">Agregar palabra</button>
+            <button id="boton-agregar2" class="oculta">Agregar</button>
+        </div>
+
+
+        <div class="oculta" id="cuadrotexto">
+            <form id="cuadro">
+                <input id="ingreso-texto" type="text" placeholder="Maximo 8 caracteres" required>
+            </form>
+        </div>
+
+
+
+    </main>
+
+
+    <script src="js/logica.js"></script>
+
+
+    <footer class="pie">
+        <p id="textopie">Desarrollado por Pablo Percara || Alura-Oracle Next Education</p>
+    </footer>
+
+</body>
+
+</html>
