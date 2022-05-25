@@ -202,8 +202,10 @@
         document.querySelector("#cuadrotexto").classList.add("oculta");
         document.querySelector("#tablero-principal").classList.remove("oculta");
         nuevoJuego();
-        $(textFiled).trigger("focus");
-        prompt()
+        $(document).ready(function() {
+            function hasTouch() { try { document.createEvent("TouchEvent"); return true; } catch (e) { return false; } } var touchPresent = hasTouch(); });
+
+
 
 
 
